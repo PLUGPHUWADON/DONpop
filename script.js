@@ -23,17 +23,4 @@ touch.addEventListener('touchend',function() {
 function count(x) {
     total += x;
     document.getElementById("count").innerHTML = total;
-    if (total == 40) {
-        let J = new Audio('J.mp3');
-        J.play();
-        document.getElementById("jum").style.display = "block";
-        document.getElementById("jum").style.width = "100%";
-        document.getElementById("jum").style.height = "100%";
-        document.getElementById("jum").style.objectFit = "cover";
-        document.getElementById("jum").style.zIndex = "5";
-    }
-
-    else if (total == 45) {
-        document.getElementById("jum").style.display = "none";
-    }
 }
